@@ -55,6 +55,14 @@ def playerA():
                   ['[3][1]', '[3][2]', '[3][3]']
                   ''')]
     
+    #Checking the input format.
+    if len(pos[0]) == 6 and pos[0][0]== '[' and pos[0][2] == ']' and pos[0][3] == '[' and pos[0][5] == ']' and pos[0][1].isdigit() and pos[0][4].isdigit():
+         None
+    else:
+         print('''Invalid input!!!
+                  Enter valid position.''')
+         return playerA()
+    
     #storing the row positon from the input.
     row_pos=int(pos[0][1])
 
@@ -114,6 +122,13 @@ def playerB():
                   ['[2][1]', '[2][2]', '[2][3]']
                   ['[3][1]', '[3][2]', '[3][3]']
                   '''))]
+    #Checking the input format.
+    if len(pos[0]) == 6 and pos[0][0]== '[' and pos[0][2] == ']' and pos[0][3] == '[' and pos[0][5] == ']' and pos[0][1].isdigit() and pos[0][4].isdigit():
+         None
+    else:
+         print('''Invalid input!!!
+                  Enter valid position.''')
+         return playerB()
     
     #storing the row positon from the input of position.
     row_pos=int(pos[0][1])
