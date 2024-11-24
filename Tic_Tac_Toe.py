@@ -5,7 +5,7 @@ GameBoard=[[ "_" for i in range(3)] for j in range(3)]
 #Winning condition for the game.
 win_pattern = [
     [[1,1], [2,2], [3,3]],  # Diagonal 1
-    [[3,3], [2,2], [1,1]],  # Diagonal 2
+    [[1,3], [2,2], [3,1]],  # Diagonal 2
     [[1,1], [1,2], [1,3]],  # Top row
     [[2,1], [2,2], [2,3]],  # Middle row
     [[3,1], [3,2], [3,3]],  # Bottom row
@@ -53,7 +53,8 @@ def playerA():
                   ['[1][1]', '[1][2]', '[1][3]']
                   ['[2][1]', '[2][2]', '[2][3]']
                   ['[3][1]', '[3][2]', '[3][3]']
-                  ''')]
+                  
+                ''')]
     
     #Checking the input format.
     if len(pos[0]) == 6 and pos[0][0]== '[' and pos[0][2] == ']' and pos[0][3] == '[' and pos[0][5] == ']' and pos[0][1].isdigit() and pos[0][4].isdigit():
